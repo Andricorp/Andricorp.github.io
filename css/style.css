@@ -1,0 +1,157 @@
+/*body{*/
+/*margin: 0;*/
+/*background-color: aqua;*/
+/*}*/
+
+@font-face {
+    font-family: "Arsenal";
+    src: url("../fonts/ArsenalRegular/ArsenalRegular.eot");
+    src: url("../fonts/ArsenalRegular/ArsenalRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/ArsenalRegular/ArsenalRegular.woff") format("woff"),
+    url("../fonts/ArsenalRegular/ArsenalRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+body{
+    font-family: "Arsenal";
+    margin: 0;
+    text-align: center;
+}
+
+ul{
+    position: fixed;
+    /*     left: 20%; */
+    /*     transform: translate(-50%); */
+    min-width:125px;
+    width: 20%;
+    height:auto;
+    background-color: #545454;
+    /*margin: auto;*/
+
+    padding: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #E0E0E0;
+}
+.p1{
+    flex: 3;
+    min-width:187px;
+}
+.p2{
+    margin: auto;
+    flex:7;
+    display: block;
+}
+
+
+
+
+.container{
+    position: relative;
+    display: flex;
+    background-color: #FBFBFB;
+    flex-flow: row wrap;
+
+    align-items: stretch;
+    /*min-width:640px;*/
+}
+.container >*{
+    flex: 1 50%;
+
+    /*flex-direction: column;*/
+
+}
+.contentWrap{
+    /*height: 100%;*/
+    background-color: #FBFBFB;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+
+
+.menu{
+    height: 100%;
+    /*flex:1;*/
+    /*position: fixed;*/
+    position: absolute;
+    /*justify-content: center;*/
+    left: 10%;
+    width: 20%;
+    min-width:125px;
+    /*flex: auto;*/
+    /*width: 30%;*/
+    background-color: #545454;
+    /*display: flex;*/
+    /*justify-content: flex-end;*/
+    /*color: #E0E0E0;*/
+}
+
+article{
+    /*width: 50%;*/
+    flex: 2;
+    background-color: #FBFBFB;
+}
+header{
+    margin-top:10vh;
+    height: 20vh;
+    min-height:113px;
+    max-height:;
+    background-color: #F0EFEB;
+    display: flex;
+    flex-flow: row wrap;
+    /*     min-width:640px; */
+}
+.me{
+    margin: auto;
+    margin-top: 10vh;
+    /*padding: 7%;*/
+    border-radius: 50%;
+    height: 117px;
+    max-height:200px;
+    min-height:80px;
+    width:117px;
+    min-width:80px;
+    max-width:200px;
+    /*     display: block; */
+    /*     width: 100px; */
+    background: url('../image/1.jpg') no-repeat center/contain;
+}
+
+/*@media all  {*/
+/*.aside { flex: 1 auto; }*/
+/*}*/
+
+/*@media all  {*/
+/*.main    { flex: 2 0px; }*/
+/*.aside-1 { order: 1; }*/
+/*.main    { order: 2; }*/
+/*.aside-2 { order: 3; }*/
+/*.footer  { order: 4; }*/
+/*}*/
+
+@media only screen and (max-width: 640px) {
+    .menu, ul{
+        position: static;
+        height: auto;
+        width:auto;
+        /*         display:flex; */
+        /*         flex-flow:column wrap; */
+        /* flex-direction:column; */
+    }
+    /*     ul{
+            position: static;
+            width:auto;
+    /*         left: 0; */
+    /*         transform: translate(0,0); */
+    /*     }  */
+    .container{
+        flex-flow: column wrap;
+    }
+    .p1{
+        display:none;
+    }
+}

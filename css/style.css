@@ -121,19 +121,12 @@ header{
     background: url('../image/1.jpg') no-repeat center/contain;
 }
 
-/*@media all  {*/
-/*.aside { flex: 1 auto; }*/
-/*}*/
 
-/*@media all  {*/
-/*.main    { flex: 2 0px; }*/
-/*.aside-1 { order: 1; }*/
-/*.main    { order: 2; }*/
-/*.aside-2 { order: 3; }*/
-/*.footer  { order: 4; }*/
-/*}*/
-
-@media only screen and (max-width: 640px) {
+@media only screen
+    /* and ( min-height:700px)  */
+and (min-device-width: 320px)
+and (max-device-width: 480px)
+{
     .menu, ul{
         position: static;
         height: auto;

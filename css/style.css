@@ -20,18 +20,33 @@ body{
 }
 
 ul{
+    margin-top: 5%;
+
     position: fixed;
-    /*     left: 20%; */
-    /*     transform: translate(-50%); */
+
     min-width:125px;
+    /*width: 20%;*/
     width: 20%;
-    height:auto;
+    height:30%;
+    /*height:auto;*/
     background-color: #545454;
     /*margin: auto;*/
 
     padding: 0;
     list-style: none;
+    display: flex;
+    flex-flow: column wrap;
+    /*align-items: center;*/
+    justify-content: space-around;
+    /*border: 1px solid white;*/
 }
+
+li{
+    margin-left: 3%;
+    width: 90%;
+    border: 3px solid #E0E0E0;
+}
+
 a{
     text-decoration: none;
     color: #E0E0E0;
@@ -99,6 +114,9 @@ header{
     margin-top:10vh;
     height: 20vh;
     min-height:113px;
+    -webkit-text-size-adjust: 350%;
+    -moz-text-size-adjust: 350%;
+    -ms-text-size-adjust: 350%;
     /*max-height:;*/
     background-color: #F0EFEB;
     display: flex;
@@ -108,16 +126,12 @@ header{
 .me{
     margin: auto;
     margin-top: 10vh;
-    /*padding: 7%;*/
+    
     border-radius: 50%;
     height: 117px;
-    max-height:200px;
-    min-height:80px;
+
     width:117px;
-    min-width:80px;
-    max-width:200px;
-    /*     display: block; */
-    /*     width: 100px; */
+
     background: url('../image/1.jpg') no-repeat center/contain;
 }
 
@@ -131,20 +145,34 @@ and (max-device-width: 480px)
         position: static;
         height: auto;
         width:auto;
-        /*         display:flex; */
-        /*         flex-flow:column wrap; */
-        /* flex-direction:column; */
     }
-    /*     ul{
-            position: static;
-            width:auto;
-    /*         left: 0; */
-    /*         transform: translate(0,0); */
-    /*     }  */
+    ul{
+        height: 50%;
+        flex-flow: row wrap;
+    }
+    li{
+        margin: auto;
+        width: auto;
+        padding: 10px;
+    }
+    a{
+        -webkit-text-size-adjust: 350%;
+        -moz-text-size-adjust: 350%;
+        -ms-text-size-adjust: 350%;
+    }
+    header{
+        margin-top: 2vh;
+        height: 9vh;
+    }
     .container{
         flex-flow: column wrap;
     }
     .p1{
         display:none;
+    }
+    .me{
+        margin-top:5%;
+        width: 234px;
+        height: 234px;
     }
 }

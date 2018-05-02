@@ -99,7 +99,7 @@ header{
     margin-top:10vh;
     height: 20vh;
     min-height:113px;
-    max-height:;
+    /*max-height:;*/
     background-color: #F0EFEB;
     display: flex;
     flex-flow: row wrap;
